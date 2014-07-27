@@ -4,11 +4,14 @@
   	<title>Sleep Tracker</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="css/bootstrap.css" rel="stylesheet">
- 	<link href="styles.css" rel="stylesheet">
+ 	<link href="css/styles.css" rel="stylesheet">
   	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
 	<script src="js/bootstrap.js"></script>
-	<script type="text/javascript" src="myjs.js"></script>
+	<script type="text/javascript" src="js/myjs.js"></script>
   </head>
+
+	<body>
+
   	<!--Nav bar-->
   	<div class="navbar navbar-inverse navbar-static-top">
 		<div class="container">
@@ -41,12 +44,12 @@
  	<!--Wrapper body-->
 	<div class="container">
 		<div class="row">
-			<p class="text-center sleep-status-text">Sleep mode off</p>
+			<p class="text-center" id="sleep-status-text">Sleep mode <span id="sleep-status-colored">off<span></p>
 		</div>
-		<div class="col-xs-11 center-block" style="float:none">
+		<div class="col-xs-12 center-block" style="float:none">
 		<div class="row">
 			<div class="col-sm-4 top-buffer">
-				<button class="btn btn-primary btn-lg btn-block">Sleep</button>
+				<button onclick="toggleSleepMode()" class="btn btn-primary btn-lg btn-block">Sleep</button>
 			</div>
 			<div class="col-sm-4 top-buffer">
 				<button class="btn btn-warning btn-lg btn-block">Wake</button>
@@ -69,10 +72,7 @@
 	-->
 
 
+	</body>
 
-
-  <body>
-
-  </body>
 
 </html>
